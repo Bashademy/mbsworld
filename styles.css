@@ -1,13 +1,33 @@
 body {
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
-header, footer {
-    background-color: #f0f0f0;
+
+/* Header part of the website */
+.container {
+    min-height: 100vh;
+    margin-bottom: -60px; /* Set to the height of your footer */
+    padding-bottom: 60px; /* Set to the height of your footer */
+  }
+
+header {
+    background-color: hsl(18, 68%, 81%);
     padding: 20px;
     text-align: center;
 }
 
+.logo {
+    float: left; /* Float the logo to the left */
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+.topic {
+    position: relative;
+    right: 4%;
+}
+
+/* Middle part of the website */
 section {
     width: 100%;
     height: 600px; /* Set an appropriate height for the embedded video */
@@ -15,3 +35,14 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Footer part of the website */
+footer {
+    background-color: hsl(18, 68%, 81%);
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} 
