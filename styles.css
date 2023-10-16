@@ -1,36 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     overflow: hidden;
+    margin: 0;
 }
 
 
-/* Header part of the website */
-.container {
-    min-height: 100vh;
-    margin-bottom: -60px; /* Set to the height of your footer */
-    padding-bottom: 60px; /* Set to the height of your footer */
-  }
-
+/* body part of the website */
 header {
     background-color: hsl(18, 68%, 81%);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .logo {
     float: left; /* Float the logo to the left */
-    margin-right: 20px; /* Add margin for spacing */
+    margin-right: 10px; /* Add margin for spacing */
 }
 
 .topic {
     position: relative;
-    right: 4%;
+    right: 5%;
 }
 
 /* Middle part of the website */
 section {
     width: 100%;
-    height: 600px; /* Set an appropriate height for the embedded video */
+    height: 350px; /* Set an appropriate height for the embedded video */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +36,9 @@ section {
 /* Footer part of the website */
 footer {
     background-color: hsl(18, 68%, 81%);
-    padding: 20px;
     text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
 } 
+
