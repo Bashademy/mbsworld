@@ -1,132 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    margin: 0;
-}
+        .logo {
+            float: left; /* Float the logo to the left */
+            margin-right: 10px; /* Add margin for spacing */
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* body part of the website */
-header {
-    background-color: hsl(18, 68%, 81%);
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
+        header, footer {
+            background-color: #efc1ae;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
 
-.logo {
-    float: left; /* Float the logo to the left */
-    margin-right: 10px; /* Add margin for spacing */
-}
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+        }
 
-.topic {
-    position: relative;
-    right: 5%;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-/* Middle part of the website */
-section {
-    width: 100%;
-    height: 350px; /* Set an appropriate height for the embedded video */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .middle-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        .box {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-/* Define the box styles */
-.box {
-    pointer-events: auto; /* Enable clicks and hover within the div */
-    width: 300px;
-    height: 250px;
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    line-height: 150px;
-    font-size: 24px;
-    margin: 50px;
-    flex: 1;
-    border-radius: 10px;
-}
+        @media (max-width: 767px) {
+            .box {
+                width: 100%;
+            }
 
-.box2 {
-    display: flex;
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    background-color: rgb(236, 79, 79);
-}
+            footer {
+                height: 50px;
+            }
+        }
 
-
-.material-symbols-outlined {
-    font-size: 48px;
-  }
-  
-
-.box1 {
-    display: flex;
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    
-}
-
-/* Footer part of the website */
-footer {
-      background-color: hsl(18, 68%, 81%);
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-} 
-
-a {
-    text-decoration: none;
-    pointer-events: none; /* Disable clicks and hover outside the div */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-
-    body {
-        overflow: scroll;
-    }
-
-    .logo {
-        width: 110px;
-    }
-
-    section {
-        align-items: center;
-    }   
-
-    .container {
-        flex-direction: column; /* Stack boxes vertically on mobile */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-    }
-
-    /* Adjust box styles for mobile */
-    .box {
-        width: 200px;
-        height: 200px;
-    }
-
-    .box1 {
-        top: 50px;
-        position: relative;
-    }
-
-    footer {
-    height: 50px; /* adjust height for mobile view */
-    } 
-}
-
-
-
-
+        .box a {
+            text-decoration: none;
+            color: inherit;
+        }
