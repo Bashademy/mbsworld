@@ -73,8 +73,31 @@ section {
     align-items: center; /* Center text vertically */
     
 }
+
+/* Footer part of the website */
+footer {
+      background-color: hsl(18, 68%, 81%);
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+} 
+
+a {
+    text-decoration: none;
+    pointer-events: none; /* Disable clicks and hover outside the div */
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    .logo {
+        width: 110px;
+    }
 
     section {
         align-items: center;
@@ -98,20 +121,12 @@ section {
         top: 50px;
         position: relative;
     }
+
+    footer {
+    height: 50px; /* adjust height for mobile view */
+    } 
 }
 
-/* Footer part of the website */
-footer {
-    background-color: hsl(18, 68%, 81%);
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-} 
 
-a {
-    text-decoration: none;
-    pointer-events: none; /* Disable clicks and hover outside the div */
-}
 
 

@@ -35,10 +35,38 @@ section {
 
 /* Footer part of the website */
 footer {
-    background-color: hsl(18, 68%, 81%);
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+      background-color: hsl(18, 68%, 81%);
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
 } 
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+    header {
+        width: 100%;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    section {
+        align-items: center;
+    }   
+
+    footer {
+    height: 50px; /* adjust height for mobile view */
+    } 
+}
+
+
+
 
