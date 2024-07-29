@@ -22,13 +22,13 @@ const HomePage = () => (
     <section className="mb-8">
       <h2 className="text-2xl font-semibold mb-4">Featured</h2>
       <div className="bg-white rounded-lg shadow-md p-4">
-        <YouTubeEmbed embedId="tgJQA6LE8oc" />
+        <YouTubeEmbed embedId="yCEgtFz9J8c" />
       </div>
     </section>
     <section>
       <h2 className="text-2xl font-semibold mb-4">Popular Shows</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {['dQw4w9WgXcQ', 'QH2-TGUlwu4', '9bZkp7q19f0', 'DLzxrzFCyOs'].map((videoId, index) => (
+        {['8gcqHjaYL4I', 'UD5JI05UNtM', 'EU9E7JFZOnU', 'zb6b0DdEuIo'].map((videoId, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
             <YouTubeEmbed embedId={videoId} />
             <div className="p-2">
@@ -76,7 +76,7 @@ const LivePage = () => (
       <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
         <iframe
           className="absolute top-0 left-0 w-full h-full"
-          src="https://your-owncast-server.com/embed/video"
+          src="https://stream.bashademy.com/embed/video"
           frameBorder="0"
           allowFullScreen
           title="Live Stream"
