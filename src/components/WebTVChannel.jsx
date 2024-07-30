@@ -76,7 +76,7 @@ const LivePage = () => (
       <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
         <iframe
           className="absolute top-0 left-0 w-full h-full"
-          src="https://watch.owncast.online/embed/video"
+          src="https://stream.bashademy.com/embed/video"
           frameBorder="0"
           allowFullScreen
           title="Live Stream"
